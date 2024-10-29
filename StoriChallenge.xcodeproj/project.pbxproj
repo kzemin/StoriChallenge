@@ -10,10 +10,28 @@
 		9F308E9F2CD19770007CFF3B /* StoriChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoriChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9F308ED62CD19985007CFF3B /* Exceptions for "StoriChallenge" folder in "StoriChallenge" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9F308E9E2CD19770007CFF3B /* StoriChallenge */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9F308EA12CD19770007CFF3B /* StoriChallenge */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9F308ED62CD19985007CFF3B /* Exceptions for "StoriChallenge" folder in "StoriChallenge" target */,
+			);
 			path = StoriChallenge;
+			sourceTree = "<group>";
+		};
+		9F308EB12CD19791007CFF3B /* Preview Content */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -33,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				9F308EA12CD19770007CFF3B /* StoriChallenge */,
+				9F308EB12CD19791007CFF3B /* Preview Content */,
 				9F308EA02CD19770007CFF3B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +81,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				9F308EA12CD19770007CFF3B /* StoriChallenge */,
+				9F308EB12CD19791007CFF3B /* Preview Content */,
 			);
 			name = StoriChallenge;
 			packageProductDependencies = (
@@ -251,10 +271,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StoriChallenge/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"StoriChallenge\"";
 				DEVELOPMENT_TEAM = D9DSWYW272;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StoriChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,10 +301,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StoriChallenge/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"StoriChallenge\"";
 				DEVELOPMENT_TEAM = D9DSWYW272;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StoriChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -1,0 +1,47 @@
+//
+//  LoadingScreenView.swift
+//  StoriChallenge
+//
+//  Created by Facundo Kzemin on 29/10/2024.
+//
+
+import SwiftUI
+
+struct LoadingScreenView: View {
+    @State private var offset: CGFloat = 1000
+    @Binding var isActive: Bool
+    
+    var body: some View {
+        ZStack {
+            Color("darkGreen")
+                .frame(height: UIScreen.main.bounds.height)
+                .ignoresSafeArea(.all)
+            
+            VStack(alignment: .leading) {
+                Text("Top \nRated")
+                
+                Text("Movies 🍿")
+            }
+            .font(.system(size: 40).bold())
+            .foregroundColor(.white)
+            .shadow(radius: 8)
+            .offset(x: 0, y: offset)
+            .onAppear {
+                withAnimation(.bouncy.speed(0.6)) {
+                    offset = 0
+                }
+            }
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    withAnimation(.bouncy.speed(0.6)) {
+                        offset = 1000
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Preview {
+    LoadingScreenView(isActive: .constant(true))
+}
